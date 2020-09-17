@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>UFO Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <nav class="navbar navbar-default navbar-light navbar-custom">
+      <div class="navbar-header" >
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#pointer-navbar-collapse-menu" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="bar-title" href="index.html">UFO Sightings
+
+            <img class="nav-ufo" src="static/images/ufo.svg">
+          </a>
+      </div>
+      <div class="collapse navbar-collapse" id="pointer-navbar-collapse-menu">
+          <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="">Harry Xing's homework</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+    <div class="hero text-center">
+      <h1>UFO Sightings</h1>
+      <p>The Truth is Out There</p>
+      <p>### Level 2: Multiple Search Categories.</p>
+      
+    </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-3">
+          <aside class="filters" style="width: auto;">
+            <div class="panel panel-default">
+
+              <!-- ////////////////////////datetime search//////////////////////////////////////////// -->
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <form id="ufoform-datetime">
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="date">Enter a Date</label>
+
+                        <select class="form-control" id="datetime" name="date" size="1">
+                          <option disabled selected value> -- select a date -- </option>
+
+                          <option value="1/1/2010">1/1/2010</option>
+                          <option value="1/2/2010">1/2/2010</option>
+                          <option value="1/3/2010">1/3/2010</option>
+                          <option value="1/4/2010">1/4/2010</option>
+                          <option value="1/4/2010">1/4/2010</option>
+                          <option value="1/5/2010">1/5/2010</option>
+                          <option value="1/6/2010">1/6/2010</option>
+                          <option value="1/7/2010">1/7/2010</option>
+                          <option value="1/8/2010">1/8/2010</option>
+                          <option value="1/9/2010">1/9/2010</option>
+                          <option value="1/10/2010">1/10/2010</option>
+                          <option value="1/11/2010">1/11/2010</option>
+                          <option value="1/12/2010">1/12/2010</option>
+                          <option value="1/13/2010">1/13/2010</option>
+                        </select>
+
+
+
+                        <label for="date">Enter a City</label>
+                        <input class="form-control" id="cityname" type="text" placeholder="">
+
+                        <label for="state">Enter a State</label>
+                        <select class="form-control" id="statename" name="state" size="1">
+                          <option disabled selected value> -- select a state -- </option>
+                          <option value="AK">AK</option>
+                          <option value="AL">AL</option>
+                          <option value="AR">AR</option>
+                          <option value="AZ">AZ</option>
+                          <option value="CA">CA</option>
+                          <option value="CO">CO</option>
+                          <option value="CT">CT</option>
+                          <option value="DC">DC</option>
+                          <option value="DE">DE</option>
+                          <option value="FL">FL</option>
+                          <option value="GA">GA</option>
+                          <option value="HI">HI</option>
+                          <option value="IA">IA</option>
+                          <option value="ID">ID</option>
+                          <option value="IL">IL</option>
+                          <option value="IN">IN</option>
+                          <option value="KS">KS</option>
+                          <option value="KY">KY</option>
+                          <option value="LA">LA</option>
+                          <option value="MA">MA</option>
+                          <option value="MD">MD</option>
+                          <option value="ME">ME</option>
+                          <option value="MI">MI</option>
+                          <option value="MN">MN</option>
+                          <option value="MO">MO</option>
+                          <option value="MS">MS</option>
+                          <option value="MT">MT</option>
+                          <option value="NC">NC</option>
+                          <option value="ND">ND</option>
+                          <option value="NE">NE</option>
+                          <option value="NH">NH</option>
+                          <option value="NJ">NJ</option>
+                          <option value="NM">NM</option>
+                          <option value="NV">NV</option>
+                          <option value="NY">NY</option>
+                          <option value="OH">OH</option>
+                          <option value="OK">OK</option>
+                          <option value="OR">OR</option>
+                          <option value="PA">PA</option>
+                          <option value="RI">RI</option>
+                          <option value="SC">SC</option>
+                          <option value="SD">SD</option>
+                          <option value="TN">TN</option>
+                          <option value="TX">TX</option>
+                          <option value="UT">UT</option>
+                          <option value="VA">VA</option>
+                          <option value="VT">VT</option>
+                          <option value="WA">WA</option>
+                          <option value="WI">WI</option>
+                          <option value="WV">WV</option>
+                          <option value="WY">WY</option>
+                        </select>
+
+
+                        <label for="country">Enter a Country</label>
+                        <select class="form-control" id="countryname" name="country" size="1" value="">
+                          <option disabled selected value> -- select a country -- </option>
+                          <option value="US">US</option>
+                        </select>
+
+
+                        <label for="shape">Enter a Shape</label>
+                        <select class="form-control" id="shapename" name="shape" size="1" value="">
+                          <option disabled selected value> -- select a shape -- </option>
+                          <option value="changing">changing</option>
+                          <option value="chevron">chevron</option>
+                          <option value="cigar">cigar</option>
+                          <option value="circle">circle</option>
+                          <option value="cross">cross</option>
+                          <option value="cylinder">cylinder</option>
+                          <option value="disk">disk</option>
+                          <option value="fireball">fireball</option>
+                          <option value="flash">flash</option>
+                          <option value="formation">formation</option>
+                          <option value="light">light</option>
+                          <option value="other">other</option>
+                          <option value="oval">oval</option>
+                          <option value="rectangle">rectangle</option>
+                          <option value="sphere">sphere</option>
+                          <option value="teardrop">teardrop</option>
+                          <option value="triangle">triangle</option>
+                          <option value="unknown">unknown</option>
+                        </select>
+                      </li>
+
+                    </ul>
+                  </div>
+                  <button id="filter-btn-filter" type="submit" class="btn btn-default">Filter by Shape </button>
+                  <button id="filter-btn-all-data" type="button" class="btn btn-default">Show All Data </button>
+                </form>
+
+              </div>
+              <!-- ////////////////////////datetime search//////////////////////////////////////////// -->
+
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-9">
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="table-head">Date</th>
+                  <th class="table-head">City</th>
+                  <th class="table-head">State</th>
+                  <th class="table-head">Country</th>
+                  <th class="table-head">Shape</th>
+                  <th class="table-head">Duration</th>
+                  <th class="table-head">Comments</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center text-muted py-4">
+      <hr>
+      <hr>
+      Copyright @ Harry Xing Email: Harryxing@hotmail.com
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/app.js"></script>
+</body>
+
+</html>
